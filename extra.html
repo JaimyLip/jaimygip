@@ -1,0 +1,79 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> GIP Jaimy </title>
+<link rel="stylesheet" type="text/css" href="css/extra.css">
+</head>
+<body>
+<nav>
+  <ul class="topnav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="GIP.html">GIP</a></li>
+    <li><a href="logboek.html">Logboek</a></li>
+    <li><a href="stage.html">Stage</a></li>
+    <li><a class="active"  href="extra.html">Extra</a></li>
+    <li class="icon">
+      <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+    </li>
+  </ul>
+  <script>
+function myFunction() {
+    document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+}
+</script>
+</nav>
+<header>
+  <h1>Informatiesysteem</h1>
+  </header>
+<article>
+  <div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Voornaam</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Je voornaam ..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Naam</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Je naam..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Land</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="australia">België</option>
+          <option value="canada">Nederland</option>
+          <option value="usa">Frankrijk</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Bericht</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Laat een bericht na.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+</article>
+
+<footer>
+<p> Made by Jaimy Lippens </p>
+</footer>
+
+</body>
+</html>

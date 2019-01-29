@@ -1,0 +1,95 @@
+<html>
+<head>
+<title> GIP Jaimy </title>
+<link rel="stylesheet" type="text/css" href="css/stage.css">
+</head>
+<body>
+<nav>
+  <ul class="topnav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="GIP.html">GIP</a></li>
+    <li><a href="logboek.html">Logboek</a></li>
+    <li><a class="active" href="stage.html">Stage</a></li>
+    <li><a href="extra.html">Extra</a></li>
+    <li class="icon">
+      <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+    </li>
+  </ul>
+  <script>
+function myFunction() {
+    document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+}
+</script>
+</nav>
+<header>
+  <h1>Stage</h1>
+</header>
+<article class="bedrijf">
+  <h1 class="vb"> Voorstelling bedrijf </h1>
+  <p class="vbp"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et <br>
+    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  <br>
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  <br>
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  </p>
+
+  <p class="vbfoto">
+    <img src="img/placeholder1.jpg" alt="gip" >
+    <img src="img/placeholder1.jpg" alt="gip" >
+  </p>
+</article>
+<button class="accordion">Verslag 1</button>
+<div class="panel">
+<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+</p>
+</div>
+
+<button class="accordion">Verslag 2</button>
+<div class="panel">
+<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+</div>
+
+<button class="accordion">Verslag 3</button>
+<div class="panel">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Verslag 4</button>
+<div class="panel">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Verslag 5</button>
+<div class="panel">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Verslag 6</button>
+<div class="panel">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+acc[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var panel = this.nextElementSibling;
+  if (panel.style.display === "block") {
+    panel.style.display = "none";
+  } else {
+    panel.style.display = "block";
+  }
+});
+}
+</script>
+<p class="pdf2"> Intentieverklaring + motivatie </p>
+<embed class="pdf" src="mergedpdf.pdf" type="application/pdf" width="70%" height="100%" />
+
+<footer>
+<p> Made by Jaimy Lippens </p>
+</footer>
+
+</body>
+</html>

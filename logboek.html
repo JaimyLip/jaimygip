@@ -1,0 +1,147 @@
+<html>
+<head>
+<title> GIP Jaimy </title>
+<link rel="stylesheet" type="text/css" href="css/logboek.css">
+</head>
+<body>
+<nav>
+  <ul class="topnav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="GIP.html">GIP</a></li>
+    <li><a class="active" href="logboek.html">Logboek</a></li>
+    <li><a href="stage.html">Stage</a></li>
+    <li><a href="extra.html">Extra</a></li>
+    <li class="icon">
+      <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+    </li>
+  </ul>
+  <script>
+function myFunction() {
+    document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+}
+</script>
+</nav>
+<header>
+  <h1>Logboek</h1>
+</header>
+<button class="accordion">1e Trimester</button>
+<div class="panel">
+<p> In het 6e jaar moeten we als eindproef een GIP maken. Voor ons is dat een physical computing project met arduino. <br>
+    Dit houd in dat we een zowel een website en een fysiek product moeten afleveren. In mijn geval wordt dit een robot <br>
+    arm die bestuurt wordt met je smarthphone. In het 1e trimester heb ik vooral het nodige opzoekwerk gedaan, zoals <br>
+    welke onderdelen ik nodig heb, hoe ik het moet maken, etc... Ik heb mijn wireframes gemaakt door die op papier uit te tekenen. <br>
+    Ik had ook al geprobeerd enkele onderdelen uit te printen maar door wat problemen met de printers is dit nog niet gelukt. <br>
+</p>
+</div>
+
+<button class="accordion">Januari</button>
+<div class="panel">
+<p> In januari ben ik (veel te laat) eindelijk begonnen aan de effectieve website, die moest dinsdag 29 januari structureel af zijn. <br>
+    De gegevens die we er al konden in steken moesten we ook al in de website plaatsen. Ik heb ook een presentatie gemaakt om te gebruiken <br>
+    op de voorstelling voor de jury op 29 januari.</p>
+</div>
+
+<button class="accordion">Februari</button>
+<div class="panel">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Maart</button>
+<div class="panel">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">April</button>
+<div class="panel">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Mei</button>
+<div class="panel">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<article class="plan">
+<h1> Planning <h1>
+</article>
+
+<div class="timeline">
+  <div class="container right">
+    <div class="content">
+      <h2> 1e Trimester </h2>
+      <p> -Project zoeken + bespreken met leerkracht <br><br>
+          -Zoeken naar een bruikbare manual voor het project <br><br>
+          -Wireframes voor website maken <br><br>
+          -Onderdelen zoeken + prijs bepalen
+      </p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>januari</h2>
+      <p> -Basisstructuur website opbouwen <br><br>
+          -Verschillende pagina's idividuele opmaak gevonden <br><br>
+          -Beschikbare content in website plaatsen <br><br>
+          -Presentatie GIP voorstelling maken
+      </p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>februari</h2>
+      <p> -fysieke onderdelen uitprinten <br><br>
+          -website up-to-date houden <br><br>
+          -indien mogelijk, onderdelen al samenstellen <br>
+
+      </p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>maart</h2>
+      <p> -fysieke onderdelen uitprinten <br><br>
+          -website up-to-date houden <br><br>
+          -indien mogelijk, onderdelen al samenstellen <br><br>
+          -2 weken stage + 1 week GWP
+
+      </p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>april</h2>
+      <p> -mobiele applicatie programmeren om arm te besturen <br><br>
+          -arm volledig samenstellen en de arduino correct programmeren<br><br>
+          -arm testen en eventuele foutjes oplossen<br><br>
+          -website up-to-date houden<br><br>
+          -gip MOET op 27 april 2019 VOLLEDIG af zijn voor op de opendeurdag
+
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+acc[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var panel = this.nextElementSibling;
+  if (panel.style.display === "block") {
+    panel.style.display = "none";
+  } else {
+    panel.style.display = "block";
+  }
+});
+}
+</script>
+
+<footer>
+<p> Made by Jaimy Lippens </p>
+</footer>
+
+</body>
+</html>
